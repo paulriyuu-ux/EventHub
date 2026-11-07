@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EventHub – Discover & Register for Events</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+ <a href="#home" class="logo">🎟️ EventHub</a>
+ <nav id="nav">
+  <a href="#events">Events</a><a href="#about">About</a><a href="#my">My Registrations</a>
+ </nav>
+ <div style="display:flex;gap:8px">
+  <button class="icon-btn" id="theme" aria-label="Toggle dark mode">🌙</button>
+  <button class="icon-btn menu-btn" id="menu" aria-label="Menu">☰</button>
+ </div>
+</div></header>
+
+<main>
+<div class="hero" id="home"><div class="wrap">
+ <h1>Discover events that<br>inspire, connect &amp; excite</h1>
+ <p>Hackathons, concerts, workshops and more. Find your next experience and reserve your seat in seconds.</p>
+ <a href="#events" class="btn">Explore Events</a>
+ <div class="next-label" id="nextLabel"></div>
+ <div class="count" id="count"></div>
+</div></div>
+
+<section id="events"><div class="wrap">
+ <h2>Upcoming &amp; Featured Events</h2>
+ <p class="sub">Search by name or venue, or filter by category.</p>
+ <div class="tools">
+  <input class="search" id="search" type="search" placeholder="🔍 Search events…" aria-label="Search events">
+  <div class="chips" id="chips"></div>
+ </div>
+ <div class="grid" id="grid"></div>
+ <div class="empty" id="empty">😕 No events match your search.</div>
+</div></section>
+
+<section class="alt" id="about"><div class="wrap">
+ <h2>Why EventHub?</h2><p class="sub">Everything you need to find and join events.</p>
+ <div class="about">
+  <div><span>⚡</span><h3>Quick Registration</h3><p>Sign up in under a minute with instant confirmation.</p></div>
+  <div><span>🔎</span><h3>Smart Discovery</h3><p>Search and category filters help you find the right event.</p></div>
+  <div><span>📱</span><h3>Works Everywhere</h3><p>Fully responsive on phones, tablets and desktops.</p></div>
+ </div>
+</div></section>
+
+<section id="my"><div class="wrap">
+ <h2>My Registrations</h2><p class="sub">Saved in your browser using Local Storage.</p>
+ <div class="reg-list" id="regs"></div>
+</div></section>
+</main>
+<footer>© 2026 EventHub · Built with HTML, CSS &amp; JavaScript</footer>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true"><div class="modal" id="modal"></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
